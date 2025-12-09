@@ -18,7 +18,6 @@
 *.auxlock
 
 # LaTeX compiled outputs
-*.pdf
 *.dvi
 *.ps
 
