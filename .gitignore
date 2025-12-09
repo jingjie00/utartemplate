@@ -16,6 +16,10 @@
 *.bcf
 *.run.xml
 *.auxlock
+*.acn
+*.glo
+*.ist
+*.acr
 
 # LaTeX compiled outputs
 *.dvi
