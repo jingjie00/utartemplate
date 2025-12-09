@@ -1,4 +1,5 @@
-# Universiti Tunku Abdul Rahman (UTAR) Thesis or Dissertation Template
+# Universiti Tunku Abdul Rahman (UTAR)'s
+# Thesis or Dissertation Template
 
 A LaTeX template for preparing thesis or dissertation documents at Universiti Tunku Abdul Rahman (UTAR).
 
@@ -121,7 +122,7 @@ Most LaTeX editors have a "Build" or "Compile" button. Click it to compile your 
 ## Template Structure
 
 ```
-be/
+utartemplate/
 ├── main-v1.tex          # Main LaTeX file
 ├── references.bib       # Bibliography file
 ├── admins/              # Administrative pages
