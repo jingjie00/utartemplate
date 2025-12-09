@@ -1,4 +1,5 @@
-# Universiti Tunku Abdul Rahman (UTAR) Thesis or Dissertation Template
+# Universiti Tunku Abdul Rahman (UTAR)'s
+# Thesis or Dissertation Template
 
 A LaTeX template for preparing thesis or dissertation documents at Universiti Tunku Abdul Rahman (UTAR).
 
@@ -6,6 +7,7 @@ A LaTeX template for preparing thesis or dissertation documents at Universiti Tu
 
 - **Original Template Author**: Tan Jing Jie
 - **Template Website**: https://utartemplete.jingjietan.com
+- **Github**: https://github.com/jingjie00/utartemplate
 - **License**: UTAR Thesis Template License (Attribution Required) - See [LICENSE](LICENSE) file
 - **Note**: Please acknowledge the original author when using this template (see Acknowledgement section below)
 
