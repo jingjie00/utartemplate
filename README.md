@@ -6,6 +6,7 @@ A LaTeX template for preparing thesis or dissertation documents at Universiti Tu
 
 - **Original Template Author**: Tan Jing Jie
 - **Template Website**: https://utartemplete.jingjietan.com
+- **GitHub Repository**: https://github.com/jingjie00/utartemplate
 - **License**: UTAR Thesis Template License (Attribution Required) - See [LICENSE](LICENSE) file
 - **Note**: Please acknowledge the original author when using this template (see Acknowledgement section below)
 
@@ -171,7 +172,14 @@ be/
    \citet{key}     % For textual citations
    ```
 
-5. **Abbreviations**: Add your abbreviations to `contents/abbreviations.tex`
+5. **Changing Reference Style to IEEE**: To change the bibliography style to IEEE format:
+   - Open `main-v1.tex`
+   - Find the line `\bibliographystyle{plainnat}` (around line 267)
+   - Change it to `\bibliographystyle{ieeetr}` for IEEE Transactions format
+   - Alternatively, use `\bibliographystyle{IEEEtran}` if you have the IEEEtran package
+   - Recompile your document (run `pdflatex` → `bibtex` → `pdflatex` → `pdflatex`)
+
+6. **Abbreviations**: Add your abbreviations to `contents/abbreviations.tex`
 
 ## Troubleshooting
 
@@ -200,12 +208,13 @@ This thesis template was originally developed by **Tan Jing Jie**.
 
 If you use this template for your thesis or dissertation, please acknowledge the original author in your acknowledgements section. An example acknowledgement is already included in `admins/acknowledgment.tex`:
 
-> **Template Acknowledgement**: This thesis was prepared using a template originally developed by Tan Jing Jie. The template is available at: https://utartemplete.jingjietan.com
+> **Template Acknowledgement**: This thesis was prepared using a template originally developed by Tan Jing Jie. The template is available at: https://github.com/jingjie00/utartemplate
 
 ## Template Website
 
 For the latest version of this template and additional resources, visit:
-**https://utartemplete.jingjietan.com**
+- **GitHub Repository**: https://github.com/jingjie00/utartemplate
+- **Template Website**: https://utartemplete.jingjietan.com
 
 ## Support
 

@@ -21,10 +21,9 @@
 \usepackage[table]{xcolor}
 \newdateformat{mydate}{\THEDAY\space\monthname[\THEMONTH]\space\THEYEAR}
 \usepackage{tikz}
-\graphicspath{{./figures/}} % Add all your figures to the "figures" folder.
-\usepackage[utf8]{inputenc}
-\renewcommand{\today}{25 October 2025}
 
+\usepackage[utf8]{inputenc}
+\renewcommand{\today}{25 October 2025} 
 % Clean single definition for subsubsection:
 \usepackage{setspace} % you already have it; ensure it's loaded before we format
 \usepackage{titlesec} % ensure titlesec is loaded (once)
@@ -264,6 +263,7 @@
 \backmatter
 \setlength{\bibhang}{3em}
 \addcontentsline{toc}{chapter}{REFERENCES}
+\renewcommand{\bibname}{REFERENCES}
 \bibliographystyle{plainnat}
 \bibliography{references}
 
