@@ -32,6 +32,55 @@ A LaTeX template for preparing thesis or dissertation documents at Universiti Tu
 - Free tier available
 - Built-in LaTeX distribution
 
+### Option 1b: Using Overleaf in VS Code (Advanced)
+
+You can work with your Overleaf projects directly in VS Code using the Overleaf extension. This gives you the power of VS Code's editor while syncing with Overleaf's cloud compilation.
+
+**Prerequisites:**
+- VS Code installed ([Download VS Code](https://code.visualstudio.com/))
+- An Overleaf account ([Sign up at Overleaf](https://www.overleaf.com/))
+
+**Setup Instructions:**
+
+1. **Install the Overleaf Extension:**
+   - Open VS Code
+   - Go to Extensions (View → Extensions or `Cmd+Shift+X` / `Ctrl+Shift+X`)
+   - Search for "Overleaf" by James Yu
+   - Click "Install"
+
+2. **Get Your Overleaf Cookie:**
+   - Open your web browser and log in to [Overleaf](https://www.overleaf.com/)
+   - Open your browser's Developer Tools:
+     - **Chrome/Edge**: Press `F12` or `Ctrl+Shift+I` (Windows/Linux) / `Cmd+Option+I` (Mac)
+     - **Firefox**: Press `F12` or `Ctrl+Shift+I` (Windows/Linux) / `Cmd+Option+I` (Mac)
+     - **Safari**: Enable Developer menu first (Preferences → Advanced → Show Develop menu), then press `Cmd+Option+I`
+   - Go to the **Application** tab (Chrome/Edge) or **Storage** tab (Firefox) or **Storage** tab (Safari)
+   - In the left sidebar, expand **Cookies** → `https://www.overleaf.com`
+   - Find the cookie named `overleaf_session2` (or `overleaf_session` for older accounts)
+   - Copy the **Value** of this cookie (it's a long string of characters)
+
+3. **Configure the Extension:**
+   - In VS Code, press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux) to open the Command Palette
+   - Type "Overleaf: Set Cookie" and select it
+   - Paste your cookie value when prompted
+   - Alternatively, you can set it in VS Code settings:
+     - Go to Settings (Code → Preferences → Settings or `Cmd+,` / `Ctrl+,`)
+     - Search for "overleaf"
+     - Find "Overleaf: Cookie" and paste your cookie value
+
+4. **Open Your Overleaf Project:**
+   - Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux)
+   - Type "Overleaf: Open Project" and select it
+   - Choose your project from the list
+   - VS Code will download and open your project files locally
+
+5. **Sync Changes:**
+   - The extension automatically syncs your changes to Overleaf
+   - You can also manually sync by using the command "Overleaf: Sync from Overleaf" or "Overleaf: Sync to Overleaf"
+   - Compile your document on Overleaf's website to see the PDF
+
+**Note:** Your cookie may expire after some time. If sync stops working, repeat step 2 to get a fresh cookie.
+
 ### Option 2: Installing LaTeX Locally
 
 #### For macOS
