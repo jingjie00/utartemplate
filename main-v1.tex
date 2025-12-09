@@ -1,0 +1,283 @@
+% Thesis Template
+% Original template by Tan Jing Jie
+% Template available at: https://research.jingjietan.com/q?=UTARTEMPLATE
+% If you use this template, please acknowledge Tan Jing Jie in your acknowledgements section.
+
+\documentclass[openany, a4paper, 12pt, oneside, doublespacing]{book}
+\usepackage{setspace, geometry, titlesec, fancyhdr, enumitem, graphicx, acro, color, makecell, amsmath, amsfonts, pifont, tabularx, hyperref}
+\usepackage[round,authoryear]{natbib}
+\usepackage{CJKutf8}
+\usepackage{pdflscape}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multirow}
+\usepackage{times}
+\usepackage{datetime}
+\usepackage{subfigure}
+\usepackage{algorithm}
+\usepackage{soul}
+\usepackage{enumitem}
+\setlist{topsep=-1em} 
+\usepackage[table]{xcolor}
+\newdateformat{mydate}{\THEDAY\space\monthname[\THEMONTH]\space\THEYEAR}
+\usepackage{tikz}
+\graphicspath{{./figures/}} % Add all your figures to the "figures" folder.
+\usepackage[utf8]{inputenc}
+\renewcommand{\today}{25 October 2025}
+
+% Clean single definition for subsubsection:
+\usepackage{setspace} % you already have it; ensure it's loaded before we format
+\usepackage{titlesec} % ensure titlesec is loaded (once)
+
+% Formatting starts here
+\geometry{top=2.5cm, bottom=2.5cm, left=5cm, right=2.5cm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\hyperlink{toc}{\textcolor{black}{\thepage}}}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\hyperlink{toc}{\textcolor{black}{\thepage}}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+\renewcommand{\headrulewidth}{0pt}
+
+\setcounter{secnumdepth}{3}
+
+\makeatletter
+\renewcommand{\@dotsep}{1000}
+\makeatother
+
+\titleformat{\chapter}[display]{\normalsize\bfseries\centering}{CHAPTER \thechapter}{-2em}{\uppercase}
+\titleformat{\section}{\normalsize\bfseries\linespread{1.2}\selectfont}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\linespread{1.2}\selectfont} % tight single spacing
+  {\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}{\normalsize\bfseries\linespread{1.2}\selectfont}{\thesubsubsection}{1em}{}
+\titlespacing{\chapter}{0pt}{0pt}{0pt}
+\titlespacing{\section}{0pt}{0pt}{-1em}
+\titlespacing{\subsection}{0pt}{0em}{-1em}
+\titlespacing{\subsubsection}{0pt}{0pt}{-1em}
+% Formatting ends here
+
+\makeatletter
+\let\c@lofdepth\relax
+\let\c@lotdepth\relax
+\makeatother
+\usepackage{tocloft}
+% Dotted leaders
+\renewcommand{\cftdot}{}  
+\renewcommand{\cftdotsep}{1} % dot spacing
+\setlength{\cftfigindent}{0em} 
+\setlength{\cftfignumwidth}{3em}
+\setlength{\cfttabindent}{0em} 
+\setlength{\cfttabnumwidth}{3em}
+
+\setlength{\cftbeforechapskip}{0pt}   % No space before chapters
+
+\setlength{\cftbeforetoctitleskip}{10pt}
+\setlength{\cftbeforetoctitleskip}{10pt} % space before "Contents" title
+\setlength{\cftaftertoctitleskip}{10pt}  % space after "Contents" title
+\renewcommand{\cftaftertoctitle}{%
+  \par\vskip0em
+  \noindent \hfill\textbf{Page}\par\vskip0.3em
+}
+
+\setlength{\cftbeforeloftitleskip}{10pt} % space before "List of Figures" title
+\setlength{\cftafterloftitleskip}{10pt}  % space after "List of Figures" title
+\renewcommand{\cftafterloftitle}{%
+  \par\vskip0em
+  \noindent\textbf{Figure}\hfill\textbf{Page}\par\vskip0.3em
+}
+
+
+
+
+\setlength{\cftbeforelottitleskip}{10pt} % space before "List of Tables" title
+\setlength{\cftafterlottitleskip}{10pt}  % space after "List of Tables" title
+\renewcommand{\cftafterlottitle}{%
+  \par\vskip0em
+  \noindent\textbf{Table}\hfill\textbf{Page}\par\vskip0.3em
+}
+
+
+\usepackage[scaled=1]{helvet}
+\setlist{noitemsep, topsep=0pt,partopsep=0pt}
+\newenvironment{whereitems}
+  {\vspace{-2em}\par\noindent Where:\vspace{-2em}\begin{itemize}}
+  {\end{itemize}}
+
+\usepackage{caption}
+\captionsetup{font={stretch=1}}
+\renewcommand{\arraystretch}{0.65} 
+
+
+\renewcommand{\tabularxcolumn}[1]{>{\setstretch{0.9}\raggedright\arraybackslash}P{#1}}
+\newcolumntype{P}[1]{>{\setstretch{0.9}\raggedright\arraybackslash}m{#1}}
+
+\newenvironment{tablenote}{%
+  \begin{flushleft}%
+  \footnotesize%
+  \begin{spacing}{0.9} % adjust spacing here
+}{%
+  \end{spacing}%
+  \end{flushleft}%
+}
+
+\newenvironment{figurenote}{%
+  \begin{flushleft}%
+  \footnotesize%
+  \begin{spacing}{0.9} % adjust spacing here
+}{%
+  \end{spacing}%
+  \end{flushleft}%
+}
+
+\usepackage{microtype}
+
+\usepackage{url}
+\usepackage{tocloft}
+\usepackage{hyperref}     % must be loaded after xcolor
+
+\hypersetup{
+    colorlinks=true,      % turn links into colored text instead of boxes
+    linkcolor=blue,       % internal links (sections, refs)
+    citecolor=blue,       % citation links
+    urlcolor=blue         % URLs in normal text and bibliography
+}
+
+
+\urlstyle{same}
+
+\usepackage{enumitem}
+\usepackage{diagbox}
+\usepackage{subcaption}
+
+\usepackage{longtable}
+
+\usepackage[acronym]{glossaries}
+
+\makeglossaries
+
+
+\input{contents/abbreviations}
+
+\usepackage{longtable}
+
+
+\newglossarystyle{longtwocolnopage}{
+  \renewenvironment{theglossary}
+    {\renewcommand{\arraystretch}{1}
+     \begin{longtable}{@{}l p{10cm}@{}}}
+    {\end{longtable}}
+  \renewcommand*{\glossaryheader}{}
+  \renewcommand*{\glossentry}[2]{
+    \textbf{\glsentryname{##1}} & \glsentrydesc{##1} \\ 
+  }
+  \renewcommand*{\glsgroupskip}{}
+}
+
+\setcounter{tocdepth}{3} 
+
+\usepackage{etoolbox}
+
+\let\oldref\ref
+\renewcommand{\ref}[1]{%
+  \ifboolexpr{ test {\ifbeginwith{#1}{eq:}} }%
+    {(\oldref{#1})}%
+    {\oldref{#1}}%
+}
+
+\begin{document}
+
+\include{admins/coverpage}
+
+
+\frontmatter
+\include{admins/titlepage}
+\include{admins/abstract}
+\include{admins/acknowledgment}
+\include{admins/approvalsheet}
+\include{admins/submissionsheet}
+\include{admins/declaration}
+
+\hypersetup{linkcolor=black,urlcolor=black,citecolor=black}
+
+    \renewcommand{\contentsname}{}
+    \chapter{TABLE OF CONTENTS}
+    \hypertarget{toc}{}
+    \tableofcontents
+
+    \renewcommand{\listtablename}{}
+    \chapter{LIST OF TABLES}
+    \listoftables
+
+    \renewcommand{\listfigurename}{}
+    \chapter{LIST OF FIGURES}
+    \listoffigures
+
+
+
+\glsaddall 
+\printglossary[type=\acronymtype, title={LIST OF ABBREVIATIONS}, style=longtwocolnopage]\addcontentsline{toc}{chapter}{LIST OF ABBREVIATIONS}
+
+
+\hypersetup{linkcolor=blue,urlcolor=blue,citecolor=blue}
+
+
+
+
+
+
+
+\addtocontents{toc}{\protect\addvspace{1em}}
+\addtocontents{toc}{\protect\contentsline{chapter}{\textbf{CHAPTERS}}{}{}}
+\addtocontents{toc}{\protect\addvspace{1em}}
+
+
+\mainmatter
+\addtocontents{toc}{\protect\vspace{12pt}}
+\include{contents/c1intro}
+\addtocontents{toc}{\protect\vspace{12pt}}
+\include{contents/c2lit}
+\addtocontents{toc}{\protect\vspace{12pt}}
+\include{contents/c3aflps}
+\addtocontents{toc}{\protect\vspace{12pt}}
+\include{contents/c4picepr}
+\addtocontents{toc}{\protect\vspace{12pt}}
+\include{contents/c5jam}
+\addtocontents{toc}{\protect\vspace{12pt}}
+\include{contents/c6adam}
+\addtocontents{toc}{\protect\vspace{12pt}}
+\include{contents/c7nlu}
+\addtocontents{toc}{\protect\vspace{12pt}}
+\include{contents/c8conclusion}
+
+\backmatter
+\setlength{\bibhang}{3em}
+\addcontentsline{toc}{chapter}{REFERENCES}
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\appendix
+\include{appendices/appendix}
+
+\newpage
+\thispagestyle{empty} 
+
+\vspace*{\fill}
+\begin{center}
+This page intentionally left blank.
+\end{center}
+\vspace*{\fill}
+
+
+\end{document}

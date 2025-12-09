@@ -1,0 +1,61 @@
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.auxlock
+
+# LaTeX compiled outputs
+*.pdf
+*.dvi
+*.ps
+
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor files
+*~
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# LaTeX build directories
+*.auxfiles/
+*.build/
+
+# BibTeX
+*.bbl.bak
+
+# TeXnicCenter
+*.tcp
+*.tps
+
+# Kile
+*.backup
+
+# TeXworks
+*.synctex
+
+# WinEdt
+*.bak
+
+# Texpad
+.texpadtmp
+
