@@ -122,7 +122,7 @@ Most LaTeX editors have a "Build" or "Compile" button. Click it to compile your 
 ## Template Structure
 
 ```
-be/
+utartemplate/
 ├── main-v1.tex          # Main LaTeX file
 ├── references.bib       # Bibliography file
 ├── admins/              # Administrative pages
