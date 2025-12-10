@@ -264,7 +264,7 @@ If you use this template for your thesis or dissertation, please acknowledge the
 
 For the latest version of this template and additional resources, visit:
 - **GitHub Repository**: https://github.com/jingjie00/utartemplate
-- **Template Website**: https://utartemplete.jingjietan.com
+- **Template Website**: https://utartemplate.jingjietan.com
 
 ## Support
 
