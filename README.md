@@ -221,6 +221,8 @@ utartemplate/
    \citep{key}     % For parenthetical citations
    \citet{key}     % For textual citations
    ```
+   
+   **Tip**: To convert DOIs to BibTeX format, you can use [DOI to BibTeX Converter](https://doi2bibtex.web.app/). Simply enter a DOI or URL, and it will generate the BibTeX entry that you can copy directly into your `references.bib` file.
 
 5. **Changing Reference Style to IEEE**: To change the bibliography style to IEEE format:
    - Open `main-v1.tex`
