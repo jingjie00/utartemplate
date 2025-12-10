@@ -222,7 +222,19 @@ utartemplate/
    \citet{key}     % For textual citations
    ```
    
-   **Tip**: To convert DOIs to BibTeX format, you can use [DOI to BibTeX Converter](https://doi2bibtex.web.app/). Simply enter a DOI or URL, and it will generate the BibTeX entry that you can copy directly into your `references.bib` file.
+   > **💡 Recommended Tool: DOI to BibTeX Converter**
+   > 
+   > This template author has also created a free online tool to help you convert DOIs to BibTeX format: **[DOI to BibTeX Converter](https://doi2bibtex.web.app/)**
+   > 
+   > **Features:**
+   > - Convert DOIs or URLs to clean BibTeX citations instantly
+   > - **arXiv support**: For arXiv papers, automatically extracts and fetches the Related DOI (journal version) so you can cite the original source instead of the preprint
+   > - No registration required - completely free to use
+   > - Clean, formatted BibTeX output ready to copy
+   > - Supports beautification and formatting options
+   > - Simply paste your DOI or URL and get the BibTeX entry that you can copy directly into your `references.bib` file
+   > 
+   > Visit [https://doi2bibtex.web.app/](https://doi2bibtex.web.app/) to try it out!
 
 5. **Changing Reference Style to IEEE**: To change the bibliography style to IEEE format:
    - Open `main-v1.tex`
