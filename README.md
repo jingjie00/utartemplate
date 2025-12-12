@@ -5,7 +5,6 @@ A LaTeX template for preparing thesis or dissertation documents at Universiti Tu
 
 ## Template Information
 
-- **Original Template Author**: Tan Jing Jie
 - **Template Website**: https://utartemplete.jingjietan.com
 - **GitHub Repository**: https://github.com/jingjie00/utartemplate
 - **License**: UTAR Thesis Template License (Attribution Required) - See [LICENSE](LICENSE) file
@@ -267,8 +266,6 @@ utartemplate/
 - Ensure labels are unique and properly formatted: `\label{key}` and `\ref{key}`
 
 ## Acknowledgement
-
-This thesis template was originally developed by **Tan Jing Jie**. 
 
 If you use this template for your thesis or dissertation, please acknowledge the original author in your acknowledgements section. An example acknowledgement is already included in `admins/acknowledgment.tex`:
 
