@@ -16,6 +16,17 @@ A LaTeX template for preparing thesis or dissertation documents at Universiti Tu
 
 [Overleaf](https://www.overleaf.com/) is an online LaTeX editor that requires no installation:
 
+**Quick Start - Copy from Overleaf (Easiest Method):**
+
+1. Go to the template on Overleaf: [https://www.overleaf.com/read/yvbspvjtvztz](https://www.overleaf.com/read/yvbspvjtvztz)
+2. Sign up for a free account (or log in if you already have one)
+3. Click "Open as Template" or "Copy Project" button (usually in the top right)
+4. This will create a copy of the template in your Overleaf account
+5. Set the main file to `main-v1.tex` (Menu → Main document) if not already set
+6. Click "Recompile" to build your document
+
+**Alternative Method - Manual Upload:**
+
 1. Go to [https://www.overleaf.com/](https://www.overleaf.com/)
 2. Sign up for a free account (or log in if you already have one)
 3. Click "New Project" → "Upload Project"
