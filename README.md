@@ -5,7 +5,7 @@ A LaTeX template for preparing thesis or dissertation documents at Universiti Tu
 
 ## Template Information
 
-- **Template Website**: https://utartemplete.jingjietan.com
+- **Template Website**: https://utartemplate.jingjietan.com
 - **GitHub Repository**: https://github.com/jingjie00/utartemplate
 - **License**: UTAR Thesis Template License (Attribution Required) - See [LICENSE](LICENSE) file
 - **Note**: Please acknowledge the original author when using this template (see Acknowledgement section below)
